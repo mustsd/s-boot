@@ -1,0 +1,26 @@
+/*
+ * The following styles are auto-applied to elements with
+ * transition="page-transition" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the page transition by editing
+ * these styles.
+ */
+
+/* page-transform */
+.page-transition-leave-active,
+.page-transition-enter-active {
+  transition: all 1s ease;
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+}
+
+.page-transition-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+}

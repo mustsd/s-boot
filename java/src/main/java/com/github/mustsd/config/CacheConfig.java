@@ -26,8 +26,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author yangz
- * @date 2022-03-01 14:30
+ * @author mustsd
+ * @date 2025-01-02
  */
 @Slf4j
 @EnableCaching
@@ -78,7 +78,7 @@ public class CacheConfig extends CachingConfigurerSupport {
     Set cacheNames = new HashSet<>();
 
     Map<String, RedisCacheConfiguration> configMap = new HashMap<>();
-    configMap.put(CacheConstant.ORG_TEMP_GOODS_CACHE, config.entryTtl(Duration.ofHours(24L)));
+//    configMap.put(CacheConstant.ORG_TEMP_GOODS_CACHE, config.entryTtl(Duration.ofHours(24L)));
 
     RedisCacheManager cacheManager =
         RedisCacheManager.builder(

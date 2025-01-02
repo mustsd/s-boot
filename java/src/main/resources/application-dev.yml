@@ -95,7 +95,7 @@ logging:
     com.baomidou: info
 config:
   shiro:
-    exclude: /api/**,/apiTest/**
+    exclude:
 mybatis-plus:
   mapper-locations: classpath:**/*Mapper.xml
 minio:

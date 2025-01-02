@@ -18,7 +18,7 @@ import java.util.Collections;
 /**
  * Swagger configuration
  *
- * @author yangz
+ * @author mustsd
  */
 @Configuration
 @EnableSwagger2
@@ -32,7 +32,7 @@ public class Knife4jConfig {
             .apiInfo(
                 new ApiInfoBuilder()
                     .title("MANAGE API Document")
-                    .description("based on knife4j for developer of manage system")
+                    .description("Based on knife4j for developer.")
                     .termsOfServiceUrl("http://www.***.com/")
                     .contact(new Contact("mustsd", "xxx.com", "***@**.com"))
                     .version("1.0")

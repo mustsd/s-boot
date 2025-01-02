@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author yangz
- * @date 2022-03-22 14:18
+ * @author mustsd
+ * @date 2025-01-02
  */
 @Slf4j
 @Configuration
@@ -28,9 +28,9 @@ public class MinIoConfig {
               .credentials(properties.getAccessKey(), properties.getSecretKey())
               .endpoint(properties.getUrl())
               .build();
-      log.info("MinIo 启动成功, url={}", properties.getUrl());
+      log.info("MinIo started successfully, url={}", properties.getUrl());
     } catch (Exception e) {
-      log.error("MinIo 启动失败,msg={}", e.getMessage());
+      log.error("MinIo started failed, msg={}", e.getMessage());
     }
     return minioClient;
   }

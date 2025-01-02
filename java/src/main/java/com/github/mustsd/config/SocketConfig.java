@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 public class SocketConfig {
 
   /**
-   * 注册netty-socket-io服务端
+   *  Register netty-socket-io server
    *
    * @return
    */
@@ -25,7 +25,7 @@ public class SocketConfig {
   }
 
   /**
-   * tomcat启动时候，扫码socket服务器并注册
+   * When tomcat starting, scan socket server and register.
    *
    * @param socketServer
    * @return
